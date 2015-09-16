@@ -11,7 +11,9 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
+            $cliente = new SoapClient("http://localhost:8080/AutenticacionServicio/UsuarioServicio?wsdl");
+            $resultado = $cliente->autenticar(array("nombre"=>"rVargas", "clave"=>"rVargas"));
+            print_r($resultado);
         ?>
     </body>
 </html>
