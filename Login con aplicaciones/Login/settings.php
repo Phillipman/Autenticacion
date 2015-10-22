@@ -4,9 +4,10 @@ error_reporting(0);
 define("SOCKET_HOST", "127.0.0.1");
 define("SOCKET_PORT", 65500);
 
-define("HOST", "127.0.0.1");
+define("HOST", "localhost"); //192.168.0.104
 define("USER", "root");
 define("PASS", "admin");
-define("DB", "autentificacion");
+define("DB", "Autentificacion");
+
 
 ?>
